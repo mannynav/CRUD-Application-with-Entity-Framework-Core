@@ -21,7 +21,6 @@ public static class MemberEndPoints
          .AsNoTracking()
          .ToListAsync());
 
-
         // GET /members/1
         group.MapGet("/{id}", async (int id, GymContext dbContext) =>
         {
