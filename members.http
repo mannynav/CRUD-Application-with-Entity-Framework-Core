@@ -1,0 +1,44 @@
+
+//Get all members
+GET http://localhost:5094/members
+
+//Get member by id
+###
+GET http://localhost:5094/members/1
+
+//Add a new member
+###
+POST http://localhost:5094/members
+Content-Type: application/json
+
+{
+  "firstName": "Chloe",
+  "lastName" : "A",
+  "email": "mannynav7794@gmail.com",
+  "phoneNumber": "8566765417",
+  "height": 180,
+  "weight": 100,
+  "reasonId": 1,
+  "goal": "NA",
+  "joiningDate": "2021-09-01"
+}
+
+//Update a member
+###
+PUT http://localhost:5094/members/2
+Content-Type: application/json
+
+{
+  "firstName": "Chloe",
+  "lastName": "Doe",
+  "email": "ChloeDoe@gmail.com",
+  "phoneNumber": "111111111",
+  "height": 180,
+  "weight": 40,
+  "reasonId": 2,
+  "joiningDate": "2021-10-10"
+}
+
+//Delete a member
+###
+DELETE http://localhost:5094/members/3
