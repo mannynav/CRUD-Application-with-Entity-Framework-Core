@@ -1,0 +1,1 @@
+This project is a back-end REST API using ASP.NET Core for a gym, where the main users are gym staff and management. It implements traditional CRUD endpoints for manipulating entries of gym members. The database used to store the members is SQLite.
